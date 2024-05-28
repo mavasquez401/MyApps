@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="rental002.css" />
+    <title>Rent A Car</title>
+</head>
+<body>
+    <h1>The Greatest Rent A Car App</h1>
+    <h2 style="color: aqua">We Rent Them, You Drive 'Em</h2>
+    <p style="color: darkgray;">By: Manny V.</p>
+
+    <form action="/submit-rental-choice" method="POST">
+        <label for="make-selection">Choose a Make:</label>
+        <select id="make-selection" name="make"></select>
+
+        <label for="model-selection">Choose a Model:</label>
+        <select id="model-selection" name="model"></select>
+
+        <label for="year-selection">Choose a Year:</label>
+        <select id="year-selection" name="year"></select>
+
+        <div id="availability-display"></div>
+        
+        <button type="submit">Rent Car</button>
+    </form>
+    <!-- <form onsubmit="isAvailable()">
+        <label for="options">Select Car Make: </label>
+        <select id="make" name="options">
+            <option value="honda">Honda</option>
+            <option value="toyota">Toyota</option>
+            <option value="chevy">Chevrolet</option>
+            <option value="ford">Ford</option>
+        </select>
+        <button type="submit">Search for Car</button>
+
+        
+    </form> -->
+</body>
+<script src="rental002.js"></script>
+</html>
